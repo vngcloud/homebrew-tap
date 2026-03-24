@@ -11,7 +11,7 @@ class Gnab < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.7/gnab_1.0.7_darwin_amd64.tar.gz"
-      sha256 "02e92d5768c8b56b01965761acc719a256778a36a1992ceff4509c2b4bcb0e31"
+      sha256 "d4eea47e55aa646f160bbb21956fedc2aa000f790d893a46c4a4e11cde51a134"
 
       define_method(:install) do
         bin.install "gnab"
@@ -19,7 +19,7 @@ class Gnab < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.7/gnab_1.0.7_darwin_arm64.tar.gz"
-      sha256 "6e61ee19628f27bce525e1b2abab807b9bf107d90bc6f2419b1e9b954f5033af"
+      sha256 "e11f76c3aa9d954f68a35930a8f00afbe379cffe712a7a57c95c57690a0c4a4e"
 
       define_method(:install) do
         bin.install "gnab"
@@ -30,14 +30,14 @@ class Gnab < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.7/gnab_1.0.7_linux_amd64.tar.gz"
-      sha256 "593b42098ef5b58d01db9ffcdad1791bb2cd89e984cb4130d7fea0fd5cca995a"
+      sha256 "75510a967ae115d0e4108ad53b31dc07121d71d8d8967375e9eebfbd21ccf3b8"
       define_method(:install) do
         bin.install "gnab"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.7/gnab_1.0.7_linux_arm64.tar.gz"
-      sha256 "06b0fd5a082a49277c998dd782869a5836167e1fe4400bbe534ec959fb3912fa"
+      sha256 "d468f39b3b2f1b95dee2577c4cdb3c3ba152cf9a102ba7985b1a0bd232a5e028"
       define_method(:install) do
         bin.install "gnab"
       end
