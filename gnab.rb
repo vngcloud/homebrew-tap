@@ -5,21 +5,21 @@
 class Gnab < Formula
   desc "GreenNode AgentBase CLI"
   homepage "https://github.com/vngcloud/gnab-releases"
-  version "1.0.6"
+  version "1.0.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.6/gnab_1.0.6_darwin_amd64.tar.gz"
-      sha256 "a71297e45442c9adbde32bede3a7226ef22da0f07a8b02e760070b2d7881dc47"
+      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.11/gnab_1.0.11_darwin_amd64.tar.gz"
+      sha256 "8f1abee89e121f28894167c108636ade2e695e4b72c5c4c117f0ab803005de45"
 
       define_method(:install) do
         bin.install "gnab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.6/gnab_1.0.6_darwin_arm64.tar.gz"
-      sha256 "231f4a52f4f6744c20829d8d613960aadbdfdf52f4925bba91f459876c158cbc"
+      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.11/gnab_1.0.11_darwin_arm64.tar.gz"
+      sha256 "dd9fbbc69f684a382d477a70935ddcfade8ff9fb28871da16c8834cfe3c3b470"
 
       define_method(:install) do
         bin.install "gnab"
@@ -29,15 +29,15 @@ class Gnab < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.6/gnab_1.0.6_linux_amd64.tar.gz"
-      sha256 "288ee91217009fabc549ab02b0dfdd4e8ad5e73ad3cab40ef8de74d7fdd5947c"
+      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.11/gnab_1.0.11_linux_amd64.tar.gz"
+      sha256 "b71acfc17a74abd21e2d65079bbe75b8d548dfeadfa0208a6fb52db37fccec58"
       define_method(:install) do
         bin.install "gnab"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.6/gnab_1.0.6_linux_arm64.tar.gz"
-      sha256 "f91e83486af66c420df7995d8859bdda1a2ce772fb7bc9692ab41b42359f4a7d"
+      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.11/gnab_1.0.11_linux_arm64.tar.gz"
+      sha256 "cb57485e79568c2e0b0050f6bba1a11c8447ab68c022b3fa7828b8f84e2df213"
       define_method(:install) do
         bin.install "gnab"
       end
