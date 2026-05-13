@@ -5,21 +5,21 @@
 class Greennode < Formula
   desc "GreenNode AgentBase CLI"
   homepage "https://github.com/vngcloud/gnab-releases"
-  version "1.0.17"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.17/greennode_1.0.17_darwin_amd64.tar.gz"
-      sha256 "38c3ae8ea54ca812c6d92ee9f768bd6e8f65ca6c561da851b32e3a016b6286d3"
+      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.1.0/greennode_1.1.0_darwin_amd64.tar.gz"
+      sha256 "10387cd138b9005f00a98890b0ecc78e2e39aa9aa259ff15a11811b4c2e18188"
 
       define_method(:install) do
         bin.install "greennode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.17/greennode_1.0.17_darwin_arm64.tar.gz"
-      sha256 "20908e651cac18999e0b362cabdf9361b165c75519d11a8a4505d93ad04a2328"
+      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.1.0/greennode_1.1.0_darwin_arm64.tar.gz"
+      sha256 "5c739edee9815f268f9eaf18a174f564eab786c8ebdc98937d2ee3eb3042507e"
 
       define_method(:install) do
         bin.install "greennode"
@@ -29,15 +29,15 @@ class Greennode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.17/greennode_1.0.17_linux_amd64.tar.gz"
-      sha256 "24e7d3c8c13802259503448df4b0dfda9365f94243777a08daae345747c44b3a"
+      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.1.0/greennode_1.1.0_linux_amd64.tar.gz"
+      sha256 "86f4199ec70683254c3c33b51e5f1e9a4b25742b9d4b4c485bdf86eb97508c81"
       define_method(:install) do
         bin.install "greennode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.0.17/greennode_1.0.17_linux_arm64.tar.gz"
-      sha256 "dcb44b3f3d29e5fdde29d137a28fff10d9dc9108bed3db737c2db34c4aa5c87f"
+      url "https://github.com/vngcloud/gnab-releases/releases/download/v1.1.0/greennode_1.1.0_linux_arm64.tar.gz"
+      sha256 "9d07d29da8e1d05cc489cb7d57e21f985b8ef22e3cfe9c3ef9133441cad5189d"
       define_method(:install) do
         bin.install "greennode"
       end
